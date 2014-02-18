@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @idol.name %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @idol.contact %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @idol.about %>
+</p>
+
+<p>
+  <strong>Motto:</strong>
+  <%= @idol.motto %>
+</p>
+
+<%= link_to 'Edit', edit_idol_path(@idol) %> |
+<%= link_to 'Back', idols_path %>

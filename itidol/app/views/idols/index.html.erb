@@ -1,0 +1,33 @@
+<h1>Listing idols</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Contact</th>
+      <th>About</th>
+      <th>Motto</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @idols.each do |idol| %>
+      <tr>
+        <td><%= idol.name %></td>
+        <td><%= idol.contact %></td>
+        <td><%= idol.about %></td>
+        <td><%= idol.motto %></td>
+        <td><%= link_to 'Show', idol %></td>
+        <td><%= link_to 'Edit', edit_idol_path(idol) %></td>
+        <td><%= link_to 'Destroy', idol, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Idol', new_idol_path %>
