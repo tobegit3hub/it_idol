@@ -1,5 +1,12 @@
-<h1>It Idol</h1>
+<h1>IT Idol</h1>
 
-<h2>tobeg3oogle@gmail.com</h2>
+<p>by tobe</p>
+
+<% @idols.each do |idol| %>
+<br/>Name: <%= idol.name %>
+<br/>Contact: <%= idol.contact %>
+<br/>About: <%= idol.about %>
+<br/>Motto: <%= idol.motto %>
+<% end %>
 
 
