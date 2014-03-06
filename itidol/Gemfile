@@ -43,3 +43,11 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Layout
+gem "twitter-bootstrap-rails"
+gem "therubyracer"
+gem "less-rails"
+gem "sass"
+gem "haml"
+gem "less"
