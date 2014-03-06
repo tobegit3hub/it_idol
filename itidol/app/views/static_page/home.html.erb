@@ -1,6 +1,7 @@
 <h1>IT Idol</h1>
 
 <% @idols.each do |idol| %>
+<br/>Id: <%= idol.id %>
 <br/>Name: <%= idol.name %>
 <br/>Contact: <%= idol.contact %>
 <br/>About: <%= idol.about %>
@@ -8,8 +9,8 @@
 <br/>Count: <%= idol.count %>
 
 <ul>
-<% idol.comments do |comment| %>
-<li><%= comment.content %></li>
+<% idol.comments.each do |comment| %>
+  <li><%= comment.content %></li>
 <% end %>
 </ul>
 
