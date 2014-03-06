@@ -35,6 +35,12 @@ class CommentsController < ApplicationController
         format.json { render json: @comment.errors, status: :unprocessable_entity }
       end
     end
+
+    # manually add the number of comments
+    idol = Idol.find_by_id(params[:comment][:idol_id])
+    idol.count += 1
+    idol.save!
+    
   end
 
   # PATCH/PUT /comments/1
