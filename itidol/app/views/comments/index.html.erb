@@ -3,7 +3,7 @@
 <table>
   <thead>
     <tr>
-      <th>Idol</th>
+      <th>Idol id</th>
       <th>Content</th>
       <th></th>
       <th></th>
@@ -14,7 +14,7 @@
   <tbody>
     <% @comments.each do |comment| %>
       <tr>
-        <td><%= comment.idol %></td>
+        <td><%= comment.idol_id %></td>
         <td><%= comment.content %></td>
         <td><%= link_to 'Show', comment %></td>
         <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
