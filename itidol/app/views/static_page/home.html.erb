@@ -1,12 +1,20 @@
 <h1>IT Idol</h1>
 
-<p>by tobe</p>
-
 <% @idols.each do |idol| %>
 <br/>Name: <%= idol.name %>
 <br/>Contact: <%= idol.contact %>
 <br/>About: <%= idol.about %>
 <br/>Motto: <%= idol.motto %>
+<br/>Count: <%= idol.count %>
+
+<ul>
+<% idol.comments do |comment| %>
+<li><%= comment.content %></li>
 <% end %>
+</ul>
+
+<% end %>
+
+
 
 

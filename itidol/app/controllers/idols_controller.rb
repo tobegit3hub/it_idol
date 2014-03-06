@@ -25,6 +25,7 @@ class IdolsController < ApplicationController
   # POST /idols.json
   def create
     @idol = Idol.new(idol_params)
+    @idol.count = 0
 
     respond_to do |format|
       if @idol.save

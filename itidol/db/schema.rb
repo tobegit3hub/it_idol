@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140306073939) do
+ActiveRecord::Schema.define(version: 20140306083801) do
 
   create_table "comments", force: true do |t|
     t.string   "idol"
@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20140306073939) do
     t.string   "motto"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.decimal  "count"
+    t.integer  "count"
   end
 
 end

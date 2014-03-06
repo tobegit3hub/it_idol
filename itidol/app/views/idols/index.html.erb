@@ -3,6 +3,7 @@
 <table>
   <thead>
     <tr>
+      <th>Id</th>
       <th>Name</th>
       <th>Contact</th>
       <th>About</th>
@@ -17,6 +18,7 @@
   <tbody>
     <% @idols.each do |idol| %>
       <tr>
+        <td><%= idol.id %></td>
         <td><%= idol.name %></td>
         <td><%= idol.contact %></td>
         <td><%= idol.about %></td>
