@@ -48,3 +48,7 @@ end
 gem "twitter-bootstrap-rails"
 gem "therubyracer"
 gem "less-rails"
+
+# Heroku
+gem 'rails_12factor', group: :production
+gem 'pg'
