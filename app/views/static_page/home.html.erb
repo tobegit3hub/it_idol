@@ -1,20 +1,25 @@
 
-<h1>IT Idol: <%= @random_motto %></h1>
+<div class="container">
+  
+  <h1>IT Idol: <%= @random_motto %></h1>
+  <br/>
+  
+  <% @idols.each do |idol| %>
 
-<% @idols.each do |idol| %>
-<br/>Name: <%= idol.name %>
-<br/>Contact: <%= idol.contact %>
-<br/>About: <%= idol.about %>
-<br/>Motto: <%= idol.motto %>
+  <div><a>
+    <br/><strong>Name:</strong> <%= idol.name %>
+    <br/><strong>Contact:</strong> <%= idol.contact %>
+    <br/><strong>About:</strong> <%= idol.about %>
+    <br/><strong>Motto:</strong> <%= idol.motto %>
 
-<ul>
-<% idol.comments.each do |comment| %>
-  <li><%= comment.content %></li>
-<% end %>
-</ul>
+    <ul>
+      <% idol.comments.each do |comment| %>
+      <li><%= comment.content %></li>
+      <% end %>
+    </ul>
+  <a></div>
+  
+  <% end %>
 
-<% end %>
-
-
-
+</div>
 

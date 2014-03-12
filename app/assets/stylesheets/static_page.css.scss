@@ -1,3 +1,20 @@
 // Place all the styles related to the StaticPage controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+  background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+*:link, *:visited, *:hover, *:active, *:focus , * {
+  -o-transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+  -webkit-transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+  -moz-transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+  transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+}
+
+      
