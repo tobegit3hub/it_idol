@@ -30,5 +30,11 @@
   <%= @idol.count %>
 </p>
 
+<ul>
+  <% @idol.comments.each do |comment| %>
+  <li><%= comment.content %></li>
+  <% end %>
+</ul>
+
 <%= link_to 'Edit', edit_idol_path(@idol) %> |
 <%= link_to 'Back', idols_path %>
