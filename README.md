@@ -9,7 +9,7 @@
 [![TravisCI status](https://secure.travis-ci.org/tobegit3hub/itidol.png)](http://travis-ci.org/tobegit3hub/itidol)
 
 ## Introduction
-List all the IT idols who're inspiring me! Go to <itidol.heroku.com> or <www.vimcode.com> for details.
+List all the IT idols who're inspiring me! Go to <http://itidol.herokuapp.com> or <http://www.vimcode.com> for details.
 
 ## Implement
 It's a classic rails project. Everyone can use `tig` or view the source code to know how to build a simple website with rails and heroku.
@@ -20,6 +20,7 @@ It's a classic rails project. Everyone can use `tig` or view the source code to 
 4. Generate static page controller and action for home page.
 5. Add Bootstrap and css for the website.
 6. Active in travis-ci.org and add .travis.yml.
+7. `git push heroku master` to deploy the website.
 
 ## Screenshot
 ![itidol](https://raw.github.com/tobegit3hub/itidol/master/screenshot/itidol.png)
