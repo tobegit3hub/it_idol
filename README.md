@@ -9,7 +9,7 @@
 [![TravisCI status](https://secure.travis-ci.org/tobegit3hub/itidol.png)](http://travis-ci.org/tobegit3hub/itidol)
 
 ## Introduction
-List all the IT idols who're inspiring me! Go to <http://itidol.herokuapp.com> or <http://www.vimcode.com> for details.
+List all the IT idols who're inspiring me! Go to <http://itidol.herokuapp.com> for details.
 
 ## Implement
 It's a classic rails project. Everyone can use `tig` or view the source code to know how to build a simple website with rails and heroku.
